@@ -1,0 +1,93 @@
+ My link: https://teachablemachine.withgoogle.com/models/l5NEyEXJE/
+
+
+ Now start coding in the main.js file:
+
+Define the startClassification() function which will be called on the onclick event of the START button.  Done
+
+ Write the following code inside this function:
+
+Write code to access the microphone of your system. Done
+
+Then, use ml5.soundClassifier() and store the trained teachable machine model in the classifier variable. Done
+
+ This function takes 2 parameters:
+
+Put the Teachable machine model link which you created in the previous project. Done
+
+ - Note: Concatenate the model links string with the ‘model.json’ string. Done
+
+Function which will be called once the model is loaded - modelReady. Done
+
+Then, define the modelReady() function. Done
+
+Write code to compare the trained model with the audio captured from the microphone. Done
+
+Use classifier.classify() which will compare the audio captured with the trained model and give a result. Done
+
+ This function takes a parameter:
+
+Function name - which will contain the result of this comparison - gotResults() Done
+
+Define gotResults() function. Done
+
+This function takes 2 parameters - error and results- Done:
+
+Inside this function, we will write code to print the ‘got result’ string on the console. Done
+
+ We will be writing the main code inside this function in the next project. Done
+
+
+ 107
+
+ Define variables: 
+You have to define as many variables as the number of animal audios you have trained the model on. Done
+
+If you have trained the model on 4 animals, create 4 variables with the respective names and assign the value 0 to all these variables.Done 
+
+These variables will hold the count of how many animal sounds are detected. Eg dog, cat, etc.Done
+
+
+Now start coding inside the gotResults() function in the main.js file:
+
+Check if there is an error, and inside this if block, write code to print the error on the console. Done
+
+Define code in the else block: 
+
+Inside the else block, write the following code:
+
+Print the results (which is coming from the modal) variable on the console. Done
+
+Create 3 random values which are between 1 to 255 and store them in 3 different variables for red, green, and blue. Done
+
+Update the heading tag created to display the count of animal sound detected. Done
+
+The variables (dog, cat) hold the count that is how many animal sounds were detected. Done
+
+Then, update the heading tag created to display the sound name detected. Done
+
+ This audio name is stored in the results variable. Done
+
+Then, update the color of both the heading tags with the random rgb values generated. Done 
+
+Then, access the image tag and store it in a variable. Done
+
+We will update the src of the image tag based on the audio detected by the model.Done
+
+Now, check if the label of the 1st result is equal to barking:
+
+If true, then inside this if block, write code to update the src to the image to dogs gif. Done
+
+Increase the count of the dog variable, by adding 1 to the dog variable.Done
+
+Now, check if the label of the 1st result is equal to meowing in the else if statement:
+
+If true, then inside this else if block, write code to update the src to the image to cats gif.Done
+
+Increase the count of the cat variable, by adding 1 to the cat variable.Done
+
+It’s not compulsory that you will be having the model trained of the above mentioned animals.Done 
+
+Use the above instructions for coding for the animals you have used.Done
+
+And then, define the else block, and inside this else block, write the code to update the src of the image tag to the listen gif which is the default image. Done

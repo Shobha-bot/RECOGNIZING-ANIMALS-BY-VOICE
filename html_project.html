@@ -1,0 +1,55 @@
+
+<html>
+  <head>
+    <title>RECOGNIZING ANIMALS BY VOICE</title>
+    <!--Meta and Bootstrap Links-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Ml5 link-->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <!--Stylesheet Link-->
+    <link rel="stylesheet" type="text/css" href="css_project.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2>RECOGNIZING ANIMALS BY VOICE</h2>
+      <p>Note: Play different sounds like barking, neighing</p>
+    </div>
+    <div class="main_div">
+      <center>
+        <!--Button-->
+         <button class="btn btn-info" onclick="startClassification()">Start</button>
+         <!--Sound-->
+         <h4 id="result_count"></h4>
+         <br>
+         <h3 id="result_label">I can hear - </h3>
+         <!--Accuracy-->
+         <h4 id="result_confidence">Accuracy - </h4>
+         <br>
+         <!--Image-->
+         <img src="ear.png" width="150" height="150" id="image">
+      </center>
+      </div>
+      <!--Copywrite Div-->
+      <div class="copy_right_div">
+        Developed by - shobhapriya740@gmail.com
+      </div>
+      <!--Script link-->
+<script src="js_project.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
